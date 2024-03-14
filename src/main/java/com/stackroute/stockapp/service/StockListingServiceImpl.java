@@ -34,6 +34,11 @@ public class StockListingServiceImpl implements StockListingService {
 
     @Value("${API_BASE_URL}")
     private String API_URL;
+
+    public void  setAPI_URL(String API_URL){
+        this.API_URL = API_URL;
+    }
+
  /**
      * Saves a new stock to the database.
      * @param stock The stock to save.

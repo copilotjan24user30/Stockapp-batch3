@@ -1,0 +1,83 @@
+
+Stock 
+
+WishList
+    emailId
+    List <stock>
+    
+
+Test method 
+  if you call the repo method it will affect the database -
+
+    stockRepository.save(stock);   - it will create a new stock in the database
+
+
+
+Service Layer
+   will call the repository  
+    repository will call the database - I don't want to call the database in the test method
+    because my database is already tested
+    so here I will do the Mockito to mock the repository 
+    and inject the mock repository in the service layer
+    
+
+
+    REST API   - Ready  (back end)
+
+    UI
+    Front end
+    Vue.js
+    vue 3
+
+    vite
+    npm  create   vue@latest
+
+    cd  projectname
+
+    npm install
+
+    npm run dev
+
+
+      
+     client                     server
+
+      vue.js                     spring boot
+
+
+      Mulit Page Application  - traditional way of developing the web application
+              request
+       ------------------------>
+       <------------------------
+               response
+
+    it load the entire page
+
+    in that page , if you perform any operation ( clikc the  button 
+      click the link......)
+        again request will go to the server
+        server will return the response (html)
+        so the next page will be loaded
+
+
+        Single page application
+
+        client                                Server
+          ----------------------------> 
+    initially it will load the entire page
+          <-------------------------------
+
+          after that it will not load the entire page
+
+          if you perform any operation (click the button, click the link)
+
+        client ------------------------>server
+                <-------------------
+                 json data
+
+                 only part of the page  is  changed (reloaded)
+
+
+
+
+

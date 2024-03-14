@@ -9,6 +9,7 @@ import com.stackroute.stockapp.model.Stock;
 import com.stackroute.stockapp.service.StockListingService;
 
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,6 +31,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @RestController
 @RequestMapping("/api/v1/stock")
+@CrossOrigin
 public class StockListingController {
 
     @Autowired

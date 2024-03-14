@@ -29,13 +29,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "stock")
 public class Stock {
     @Id
-    private String symbol;
-    private String name;
-    private String currency;
-    private String exchange;
-    private String mic_code;
-    private String country;
-    private String type;
+      private String symbol;
+      private String name;
+      private String currency;
+      private String exchange;
+      private String mic_code;
+      private String country;
+      private String type;
+    
+   // private String email;
+
+    
 }
 
  
